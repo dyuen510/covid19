@@ -1,25 +1,22 @@
-const queryURL = 'https://api.covid19api.com/live/country/US/status/confirmed';
+const queryURL = 'https://corona.lmao.ninja/states';
 
 $.ajax({
     url: queryURL,
     method: 'GET'
 }).then(function (response) {
-    for (let i = 1; i <= response.length - 1; i++) {
-        console.log(response[i])
-        if(response[i].Province == 'California'){
-            // console.log(response[i].Province);
-            // console.log(response[i].Date);
-            // console.log(response[i].Cases);
-            // console.log(response[i].Status);
-            let province = $('<p>').text('State: ' + response[i].Province);
-            let date = $('<p>').text('Date: ' + response[i].Date);
-            let cases = $('<p>').text('Number of Cases Confirmed: ' + response[i].Cases);
-            let status = $('<p>').text('Status: ' + response[i].Status);
-            let display = $('<div class = "displayContent">').append(province, date, cases, status);
-            $('.content').append(display);
-        }
-
+    for ( let i = 1; i <= response.length; i++) {
+        // console.log(response[i]);
+        let state = $('<h3>').text(response[i].state);
+        let cases = $('<p>').text('Total Cases: ' + response[i].cases);
+        let todayCases = $('<p>').text('Number of Cases Today: ' + response[i].todayCases);
+        let deaths = $('<p>').text('Total Deaths: ' + response[i].deaths);
+        let todayDeaths = $('<p>').text('Number of Deaths Today: ' + response[i].todayDeaths);
+        let active = $('<p>').text('Active Cases: ' + response[i].active);
+        let display = $('<div class = "displayContent">').append(state, cases, todayCases, deaths, todayDeaths, active)
+        $('.content').append(display);
+        console.log(state)
     }
+        
 })
 
 
