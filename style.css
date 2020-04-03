@@ -4,6 +4,11 @@ body {
     width: 100%;
 }
 
+h3{
+    font-size:25px;
+    text-align:center;
+}
+
 .banner{
     text-align:center;
     color:white;
