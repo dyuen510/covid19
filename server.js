@@ -4,8 +4,8 @@ $.ajax({
     url: queryURL,
     method: 'GET'
 }).then(function (response) {
-    for ( let i = 1; i <= response.length; i++) {
-        // console.log(response[i]);
+    for ( let i = 0; i <= response.length; i++) {
+        console.log(response[i]);
         let state = $('<h3>').text(response[i].state);
         let cases = $('<p>').text('Total Cases: ' + response[i].cases);
         let todayCases = $('<p>').text('Number of Cases Today: ' + response[i].todayCases);
