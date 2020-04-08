@@ -19,4 +19,13 @@ $.ajax({
         
 })
 
+const newsQueryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=covid19&api-key=pqTAhnco7pVR9FUqC09qgrNtbfwV1CZH";
+
+  $.ajax({
+    url: newsQueryURL,
+    method: 'GET'
+  }).then(function (response) {
+    console.log(response);
+  })
+
 
