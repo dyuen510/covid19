@@ -35,9 +35,17 @@ html{
     opacity:0.8;
 }
 
-.news{
+#news{
+    color:white;
+    text-align:center;
+    width:800px;
+    margin:80px;
+}
+
+a{
     color:white;
 }
+
 
 
 

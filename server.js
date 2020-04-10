@@ -35,7 +35,7 @@ $.ajax({
         var dBtn = $(`<a class="btn-link" target="_blank"><button> For more Go to link </button></a>`).text("For more Go to link");
         dBtn.attr("href", response.response.docs[i].web_url);
 
-        var newsList = $('<div class="res-news">').append(p, c, dBtn);
+        var newsList = $('<div id ="news">').append(p, c, dBtn);
         $('.news').prepend(newsList);
     }
 
