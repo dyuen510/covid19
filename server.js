@@ -26,10 +26,10 @@ $.ajax({
     method: 'GET'
 }).then(function (response) {
     console.log(response);
-    for (var i = 0; i < 7; i++) {
+    for (var i = 0; i < 9; i++) {
         console.log(response);
 
-        var p = $('<h5>').text('Title: ' + response.response.docs[i].headline.main);
+        var p = $('<h3>').text('Title: ' + response.response.docs[i].headline.main);
         var c = $('<p class="des-item">').text(response.response.docs[i].snippet);
 
         var dBtn = $(`<a class="btn-link" target="_blank"><button> For more Go to link </button></a>`).text("For more Go to link");
