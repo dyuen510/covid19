@@ -1,4 +1,4 @@
-const queryURL = 'https://corona.lmao.ninja/states';
+const queryURL = 'https://corona.lmao.ninja/v2/states';
 
 $.ajax({
     url: queryURL,
