@@ -14,16 +14,13 @@ h3{
     color:white;
     font-size:40px;
 }
-.social{
-    position:relative;
-    top:0px;
-}
+
 html{
-      background: url('covid.jpg') no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+    background: url('covid.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .displayContent{
     width:200px;
@@ -66,6 +63,16 @@ h2{
 
 a{
     color:white;
+}
+
+.footer{
+    float:right;
+    position:relative;
+    bottom:0px;
+    color:white;
+    font-size:30px;
+    width:95%; 
+    text-align:center;
 }
 
 /* media queries for extra small screens */

@@ -8,3 +8,4 @@ The data pulled for each state or territory consists of :
 <div align="center">
     <img src="screenshot.png" width="400px"</img> 
 </div>
+
