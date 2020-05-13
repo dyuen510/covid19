@@ -70,4 +70,22 @@ a{
 
 /* media queries */
 
+@media (min-width: 50px) and (max-width: 375px){
+    html,body{
+        background:none;
+        background-color:black;
+    }
+    
+    .banner{
+        font-size:20px;
+    }
 
+    .social{
+        background-color:white;
+        width:150px;
+        margin-left:80px;
+    }
+    h3{
+        font-size:15px;
+    }
+}
