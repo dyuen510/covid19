@@ -129,8 +129,17 @@ a{
     }
     
     #news{
+        margin:15px;
         width:145px;
         height:340px;
         font-size:13px;
+    }
+
+    .displayContent {
+        margin:15px;
+        height:200px;
+        background-color:white;
+        color:black;
+        width:150px;
     }
 }

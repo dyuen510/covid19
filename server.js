@@ -26,7 +26,7 @@ $.ajax({
     method: 'GET'
 }).then(function (response) {
     // console.log(response);
-    for (var i = 0; i < 9; i++) {
+    for (var i = 0; i < 10; i++) {
         // console.log(response);
 
         var p = $('<h3>').text('Title: ' + response.response.docs[i].headline.main);
