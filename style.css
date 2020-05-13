@@ -21,6 +21,7 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    opacity:0.9;
 }
 .displayContent{
     width:200px;
@@ -152,5 +153,15 @@ a{
 
     p{
         font-size: 11px;
+    }
+
+    .footer{
+        background-color:sienna;
+        border-radius:25px;
+        color:white;
+        margin:10px;
+        margin-left:35px;
+        float:left;
+        width:300px;
     }
 }
