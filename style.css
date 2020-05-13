@@ -85,7 +85,25 @@ a{
         width:150px;
         margin-left:80px;
     }
+
+    h2{
+        font-size:18px;
+        margin:10px;
+        width:300px;
+    }
     h3{
         font-size:15px;
+        /* width:400px; */
+    }
+    #news{
+        width:60%;
+    }
+    
+    .displayContent{
+        background-color:white;
+        color:black;
+        opacity:0.8;
+        height:200px;
+        margin:10px;
     }
 }
