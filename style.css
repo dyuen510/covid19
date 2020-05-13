@@ -68,7 +68,7 @@ a{
     color:white;
 }
 
-/* media queries */
+/* media queries for extra small screens */
 
 @media (min-width: 50px) and (max-width: 375px){
     html,body{
@@ -91,10 +91,11 @@ a{
         margin:10px;
         width:300px;
     }
+
     h3{
         font-size:15px;
-        /* width:400px; */
     }
+
     #news{
         width:60%;
     }
@@ -105,5 +106,13 @@ a{
         opacity:0.8;
         height:200px;
         margin:10px;
+    }
+}
+
+/* media query for larger mobile screens */
+@media (min-width: 425px){
+    html,body{
+        background:none;
+        background-color:black;
     }
 }
